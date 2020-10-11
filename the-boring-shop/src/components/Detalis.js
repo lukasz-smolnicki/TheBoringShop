@@ -41,7 +41,10 @@ export default class Detalis extends Component {
                                             <ButtonContainer>powrót do produktów</ButtonContainer>
                                         </Link>
 
-                                        <ButtonContainer cart disabled={inCart ? true : false} onClick={() => { value.addToCart(id) }}>
+                                        <ButtonContainer cart disabled={inCart ? true : false} onClick={() => {
+                                            value.addToCart(id);
+                                            value.openModal(id);
+                                        }}>
                                             {inCart ? "w koszyku" : "dodaj do koszyka"}
                                         </ButtonContainer>
                                     </div>
