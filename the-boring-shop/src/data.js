@@ -72,7 +72,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 74.99,
+    id: 7,
     title: "Iphone 7",
     img: "img/product-7.png",
     price: 129.99,
