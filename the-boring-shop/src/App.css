@@ -18,6 +18,10 @@ body {
   text-transform: uppercase;
 }
 
+.text-title-short {
+  letter-spacing: 0;
+}
+
 .text-blue {
   color: var(--mainBlue);
 }
