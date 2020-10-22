@@ -3,6 +3,8 @@ import React from 'react'
 export default function CartItem({ item, value }) {
     const { id, title, img, price, total, count } = item;
     const { increment, decrement, removeItem } = value;
+    const priceFixed = price.toFixed(2);
+    const totalFixed = total.toFixed(2);
     return (
         <div className="row my-2 text-title text-title-short text-center" >
             <div className="col-10 mx-auto col-lg-2">
@@ -18,7 +20,7 @@ export default function CartItem({ item, value }) {
             </div>
             <div className="col-10 mx-auto col-lg-2">
                 <span className="d-lg-none">cena : </span>
-                {price} zł
+                {priceFixed} zł
             </div>
             <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
                 <div className="d-flex justify-content-center">
@@ -39,7 +41,7 @@ export default function CartItem({ item, value }) {
                 <div className="cart-icon" onClick={() => removeItem(id)}><i className="fas fa-trash"></i></div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <strong>łączna cena : {total} zł</strong>
+                <strong>łączna cena : {totalFixed} zł</strong>
             </div>
         </div >
     )
