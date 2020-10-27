@@ -14,17 +14,17 @@ export default function CartTotals({ value }) {
                             </button>
                             <h5>
                                 <span>
-                                    suma :
+                                    netto :
                                 </span> {cartSubTotal} zł
                             </h5>
                             <h5>
                                 <span>
-                                    podatek :
+                                    vat :
                                 </span> {cartTax} zł
                             </h5>
                             <h5>
                                 <span>
-                                    łącznie do zapłaty :
+                                    brutto :
                                 </span> {cartTotal} zł
                             </h5>
                         </Link>
