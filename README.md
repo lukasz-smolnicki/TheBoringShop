@@ -4,7 +4,7 @@ E-commerce application created with react, context api, react router and bootstr
 
 ### App deploy
 
-The Boring Shop available at https://the-boring-shop.netlify.app/
+The Boring Shop available at netlify.com https://the-boring-shop.netlify.app/
 
 ## Available Scripts
 
